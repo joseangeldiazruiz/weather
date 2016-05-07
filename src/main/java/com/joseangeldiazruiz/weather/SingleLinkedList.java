@@ -18,7 +18,7 @@ public class SingleLinkedList<T>{
         }
     }
 
-    public Optional<T> NthElementFromTheEnd(int n){
+    public Optional<T> nthElementFromTheEnd(int n){
         if (n < 1) {
             throw new IllegalArgumentException("N must be greater than 0");
         }
@@ -48,6 +48,6 @@ public class SingleLinkedList<T>{
     }
 
     public Optional<T> fifthElementFromTheEnd(){
-        return NthElementFromTheEnd(5);
+        return nthElementFromTheEnd(5);
     }
 }
